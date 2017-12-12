@@ -42,8 +42,8 @@ export class BookPopupComponent implements OnInit {
         };
     }
 
-    saveExistBook(existBook: M.Book) {
-        this.bookService.saveExistBook(this.currentBook, this.existBookId);
+    saveExistBook(currentBook: M.Book) {
+        this.bookService.saveExistBook(currentBook, this.existBookId);
     }
 
     saveNewOrExistBook(currentBook: M.Book) {
@@ -62,7 +62,7 @@ export class BookPopupComponent implements OnInit {
             if (titleForEditableBookIsExist) {
                 alert('Current title is exist');
             } else {
-                this.bookService.saveExistBook(currentBook, this.existBookId);
+                this.saveExistBook(currentBook);
                 this.hideBookModal(); 
             }
         }
