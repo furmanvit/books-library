@@ -1,0 +1,30 @@
+
+    <book-popup [books]="books"
+                #modal></book-popup>
+  <span class="book-delete" 
+  title="DELETE" 
+  (click)="deleteBook(existBook, existBook.title)">
+<i class="fa fa-trash" aria-hidden="true"></i>
+</span>
+<span class="book-edit" 
+  title="EDIT" 
+  (click)="modal.openExistBookModal(existBook)">
+<i class="fa fa-pencil-square-o" aria-hidden="true" ></i>
+</span>
+<img class="img-responsive book-img" 
+  src={{existBook.img}}
+  alt="image of {{title}}`s book">
+<div class="caption">
+<p class="book-title">
+  {{existBook.title | capitalize }}
+</p>
+</div>
+<span>
+  {{existBook.author}}
+</span>
+<br>
+<span *ngIf="existBook.date">
+  {{existBook.date}}
+</span>
+
+
