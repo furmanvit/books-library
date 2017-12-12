@@ -84,25 +84,4 @@ export class BookService {
     getAllBooksFromServer(): Observable<M.Book[]> {
         return this.net.getAllBooks();
     }
-
-    titlecase(str): string {
-        if (!str) {
-            return '';
-        }
-
-        str = str.trim();
-        let parts = str.split(' ');
-        let result = '';
-        for (let part of parts) {
-            result += ' ' + part[0].toUpperCase() + part.substring(1);
-        }
-        return result.substring(1);
-    }
-
-    fixString(str): string {
-        if (str) {
-            return str.replace(/\W/g, '');
-        }
-        console.log('no');
-    }
 }
