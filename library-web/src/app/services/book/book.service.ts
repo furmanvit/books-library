@@ -2,15 +2,13 @@ import { Injectable } from '@angular/core';
 import { NetService } from '../../services/net/net.service';
 import * as M from '../../app.models';
 import { Observable } from 'rxjs/Observable';
-import { Router } from '@angular/router';
 
 @Injectable()
 export class BookService {
     currentBook: M.Book;
     books: M.Book[];
 
-    constructor(private net: NetService,
-        private router: Router) {
+    constructor(private net: NetService) {
         this.books = [];
     }
 

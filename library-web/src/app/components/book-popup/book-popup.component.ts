@@ -1,8 +1,7 @@
-import { Component, ViewChild, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, ViewChild, OnInit, Input } from '@angular/core';
 import { ModalDirective } from 'ngx-bootstrap';
 import { BookService } from '../../services/book/book.service';
 import * as M from '../../app.models';
-import { BookListComponent } from '../book-list/book-list.component';
 
 @Component({
     selector: 'book-popup',
