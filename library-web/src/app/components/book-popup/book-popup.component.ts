@@ -74,7 +74,6 @@ export class BookPopupComponent implements OnInit {
     }
 
     openExistBookModal(existBook: M.Book) {
-        this.isNewBook = false;
         this.initExistBook(existBook);
         this.showBookModal();
     }
