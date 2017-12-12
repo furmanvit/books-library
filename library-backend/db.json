@@ -3,7 +3,7 @@
     {
       "id": "1",
       "author": "Antoine de Saint-Exupery",
-      "date": "01/20/1943",
+      "date": "20/01/1943",
       "title": "@@the little prince",
       "img": "https://upload.wikimedia.org/wikipedia/en/0/05/Littleprince.JPG"
     },
@@ -17,7 +17,7 @@
     {
       "id": "3",
       "author": "Agata Christie",
-      "date": "05/21/1937",
+      "date": "21/05/1937",
       "title": "sherlock holmes",
       "img": "https://i.pinimg.com/736x/dd/ae/78/ddae789e017831d13ddbb5fdad0636c5--sherlock-holmes-comic-books.jpg"
     },
@@ -51,7 +51,7 @@
     },
     {
       "id": "UmowWPL",
-      "date": "15/25/1883",
+      "date": "15/03/1883",
       "title": "Pinoccio",
       "author": "carlo collodi",
       "img": "https://images-na.ssl-images-amazon.com/images/I/51QY6ZK226L._SX363_BO1,204,203,200_.jpg"
