@@ -73,7 +73,7 @@ export class BookService {
             if (isCurrentBookTitle) {
                 return false;
             } else {
-                if (currentBook.title === elem.title) {
+                if (currentBook.title.toLowerCase() === elem.title.toLowerCase()) {
                     return true;
                 }
             }
