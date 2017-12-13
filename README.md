@@ -9,7 +9,7 @@ It's a simple project on Angular 5, where you can add/edit/delete a book. It inc
 5. $ npm install -g json-server
 
 # Run the project
-1. open folder library-web
-2. $ npm start
-3. open folder library-backend
-4. $ json-server --watch db.json
+1. open folder library-backend
+2. $ json-server --watch db.json
+3. open folder library-web
+4. $ npm start
