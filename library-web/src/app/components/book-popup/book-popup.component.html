@@ -93,8 +93,9 @@
             </div>
           <div class="row form-group add-new-book">
             <div class="col-md-6 text-right">
-              <button type="button" (click)="saveNewOrExistBook(currentBook)"
-              [disabled]="bookForm.invalid">
+              <button type="button" 
+                      (click)="saveNewOrExistBook(currentBook)"
+                      [disabled]="bookForm.invalid">
                 Save
               </button>
             </div>

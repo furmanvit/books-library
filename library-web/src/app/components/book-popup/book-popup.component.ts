@@ -46,6 +46,16 @@ export class BookPopupComponent implements OnInit {
         this.bookService.saveExistBook(currentBook, this.existBookId);
     }
 
+    reset(bookForm) {
+        if (this.isNewBook) {
+            bookForm.reset();
+            console.log('bookForm reset');
+        } else {
+            console.log('this.isNewBook ' + this.isNewBook);
+            console.log('bookForm not-reset');
+        }
+    }
+
     saveNewOrExistBook(currentBook: M.Book) {
         if (this.isNewBook) {
             let titleIsExist = this.bookService.validateTitleForNewBook(currentBook, this.books);
