@@ -1,5 +1,5 @@
 # Description
-It's a simple project on Angular 5, where you can add/edit/delete a book. It includes form validation, Bootstrap-modal, nice UI, and json-server.
+It's a simple project on Angular 5, where you can add/edit/delete a book. It includes form validation, Bootstrap-modal, nice UI and json-server.
 
 # Getting Started
 1. open folder library-web
