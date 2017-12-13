@@ -59,7 +59,7 @@ export class BookService {
     validateCurrentBookTitle(currentBook: M.Book): boolean {
         let isTitleOfCurrentBook = this.books.some(elem => {
             if (currentBook.id === elem.id) {
-                if (currentBook.title === elem.title) {
+                if (currentBook.title.toLowerCase() === elem.title.toLowerCase()) {
                     return true;
                 }
             }
